@@ -6,9 +6,19 @@ import sympy as sy
 # DO NOT CHANGE THE NAME OF gausslegendre() function
 def gausslegendre(f, a, b, n=20):
     ans = 0
-    # Edit here to implement your code
-
+    # wf is the weight multiple by the function f(y)
+    wf=0 
+    #Sn is sample point, W is weight
+    [Sn,W]=np.polynomial.legendre.leggauss(n)       
+    i=1
+    for i in range(n):
+       y=((b-a)/2)*Sn[i]+((a+b)/2)
+       wf+=W[i]*f(y)
+    ans=((b-a)/2)+wf
     return ans
+
+
+
 
 if __name__ == "__main__":
     def f(x):
