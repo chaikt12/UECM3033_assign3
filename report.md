@@ -30,7 +30,8 @@ The next part is graph plotting. Use matplotlib.pyplot with the input of t as th
 
 
 Put your graphs here and explain.
-![ODEplot.png](ODEplot.png)
+![ODEplot1.png](ODEplot.png)
+![ODEplot2.png](ODEplot.png)
 Is the system of ODE sensitive to initial condition? Explain.
 The system of ODE is not sensitive to the initial condition. From the two differential equations, y_0' = a(y_0)(1-y_1 ) and y_1'=b(y_1)(1-y_0), we can see that the change in y_0 don"t have much effect on the ODE. This can also be seen in the graphs above where there is not much different between y_0=0.1 and 0.11.
 
