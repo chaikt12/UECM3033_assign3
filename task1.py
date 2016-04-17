@@ -14,7 +14,7 @@ def gausslegendre(f, a, b, n=20):
     for i in range(n):
        y=((b-a)/2)*Sn[i]+((a+b)/2)
        wf+=W[i]*f(y)
-    ans=((b-a)/2)+wf
+    ans=((b-a)/2)*wf
     return ans
 
 

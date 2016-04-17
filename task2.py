@@ -13,14 +13,13 @@ def my_ode(y, t, a, b):
 
 # initialize variables
 end_year = 5
-count_of_years = end_year + 1
 y0_initial = 0.1
 y1_initial = 1.0
 a = 1
 b = 0.2
 
 # initialize arguments
-t = np.linspace(0, end_year, count_of_years)
+t = np.linspace(0, end_year, 100)
 y0_vector = np.array([y0_initial, y1_initial])
 
 # solve ode and obtain array of values
