@@ -26,7 +26,7 @@ y0_vector = np.array([y0_initial, y1_initial])
 # solve ode and obtain array of values
 sol = odeint(my_ode, y0_vector, t, args=(a, b))
 
-# plotting
+# plotting y0=0.1 and y1 against t
 plt.subplot(121)
 y0_col = 0
 y1_col = 1
@@ -35,6 +35,14 @@ plt.plot(t, sol[:, y1_col], 'r', label=r'$y_1$')
 plt.title('$y_0$ = %f'%( y0_initial ) )
 plt.legend(loc='best')
 plt.xlabel('$t$')
+plt.ylabel('$y$')
+
+#plotting y1 agaisnt y0=0.1
+plt.subplot(122)
+plt.plot(sol[:,y0_col],sol[:,y1_col],'g',label='Predator y1 against Prey y0')
+plt.title('Predator y1 against Prey y0=0.1')
+plt.legend(loc='best')
+plt.xlabel('$y_0$=%f'%(y0_initial))
 plt.ylabel('$y$')
 
 #######
@@ -46,8 +54,9 @@ y0_vector = np.array([y0_initial, y1_initial])
 # solving 
 sol = odeint(my_ode, y0_vector, t, args=(a,b))
 
-# plotting
-plt.subplot(122)
+# plotting y0=0.11 and y1 against t
+plt.figure()
+plt.subplot(121)
 y0_col = 0
 y1_col = 1
 plt.plot(t, sol[:, y0_col], 'b', label=r'$y_0$')
@@ -55,4 +64,12 @@ plt.plot(t, sol[:, y1_col], 'r', label=r'$y_1$')
 plt.title('$y_0$ = %f'%( y0_initial ) )
 plt.legend(loc='best')
 plt.xlabel('$t$')
+plt.ylabel('$y$')
+
+#plotting y1 agaisnt y0=0.11
+plt.subplot(122)
+plt.plot(sol[:,y0_col],sol[:,y1_col],'g',label='Predator y1 against Prey y0')
+plt.title('Predator y1 against Prey y0=0.11')
+plt.legend(loc='best')
+plt.xlabel('$y_0$=%f'%(y0_initial))
 plt.ylabel('$y$')
