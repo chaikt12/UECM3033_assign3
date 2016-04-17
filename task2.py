@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 # ode function
 def my_ode(y, t, a, b):
     y0, y1 = y
-    diff = [a*(y0 - y0 * y1),
-            b*(-y1 + y0 * y1)]
+    diff = [a*(y0 -y0*y1),
+            b*(-y1+y0*y1)]
     
     return diff
 
