@@ -27,7 +27,7 @@ In task2, the I first defined the ode function in my_ ode that take in y, t, a a
 
 The next part is graph plotting. Use matplotlib.pyplot with the input of t as the x-axis, solution from odeint as y-axis. The first plot is consist of two line, blue and red of the odeint function created array. The blue line plot is the whole row of the array with the first column of the array. The red line plot is the whole row of the array with the second column of the array. The graph of y1 against y0 also plotted with green line. The second part is setting the y0_intial to be 0.11. Repeat the same procedure above and plot the graph. 
 
-Put your graphs here and explain.
+
 ![ODEplot1.png](ODEplot1.png)
 ##y_0=0.1
 ##![ODEplot2.png](ODEplot2.png)
