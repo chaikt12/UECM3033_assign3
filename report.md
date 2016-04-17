@@ -18,6 +18,8 @@ In the task1, the define function gausslegendre will take in function, f(x) , lo
 At the main function part, the integration is defined and calculated using sympy.integrate and the self defined gausslegendre function.
 Explain how you get the weights and nodes used in the Gauss-Legendre quadrature.
 the weight and node can be obtained by numpy..polynomial.legendre.leggauss. It will return sample point and weight in the form of array. 
+
+
 ---------------------------------------------------------
 
 ## Task 2 -- Predator-prey model
